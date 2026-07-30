@@ -1,6 +1,6 @@
-# Claude Code Skills 合集 — 42 个可执行技能
+# Claude Code Skills 合集 — 52 个可执行技能
 
-从 5 本经典著作蒸馏出的方法论技能包。
+从 7 本经典著作蒸馏出的方法论技能包。
 
 ## 安装
 
@@ -10,7 +10,7 @@ cp -r */ ~/.claude/skills/
 
 ## 技能清单
 
-### 《你的灯亮着吗？》(7)
+### 《你的灯亮着吗》(7)
 | 技能 | 一句话 |
 |------|--------|
 | `check-your-lights` | 元检查——出门前灯亮着吗 |
@@ -44,6 +44,26 @@ cp -r */ ~/.claude/skills/
 | `remembering-vs-experiencing` | 记忆=峰值+终点 |
 | `overconfidence` | 用区间预测校准自信 |
 
+### 《谁动了我的奶酪》(5)
+| 技能 | 一句话 |
+|------|--------|
+| `sniff-the-change` | 在变化发生前闻出味道 |
+| `let-go-old-cheese` | 越早放弃旧的，越早发现新的 |
+| `overcome-fear` | 无所畏惧时你会怎么做？ |
+| `move-with-cheese` | 享受变化，而不只是适应 |
+| `keep-it-simple` | 别复杂化，穿上鞋就出发 |
+
+### 《大趋势》(7)
+| 技能 | 一句话 |
+|------|--------|
+| `trend-analyzer` | 不看专家看数据，内容分析法 |
+| `high-tech-high-touch` | 技术越多，人越渴望接触 |
+| `decentralization` | 权力从中心流向边缘 |
+| `info-society` | 工业→信息，核心资产是知识 |
+| `global-economy` | 经济全球化，思维别困在国界 |
+| `networking-era` | 等级→网络，价值=连接×转发 |
+| `long-term-view` | 短期是噪音，长期是趋势 |
+
 ### 《巴菲特致股东信》(20)
 | 技能 | 一句话 |
 |------|--------|
@@ -68,11 +88,22 @@ cp -r */ ~/.claude/skills/
 | `real-conservatism` | 真正的保守主义 |
 | `three-asset-categories` | 三类资产估值框架 |
 
+## 来源书目
+
+| 序号 | 书名 | 作者 | 技能数 |
+|------|------|------|--------|
+| 1 | 《你的灯亮着吗》 | Gause & Weinberg | 7 |
+| 2 | 《卓有成效的管理者》 | Peter Drucker | 6 |
+| 3 | 《思考，快与慢》 | Daniel Kahneman | 9 |
+| 4 | 《谁动了我的奶酪》 | Spencer Johnson | 5 |
+| 5 | 《大趋势》 | John Naisbitt | 7 |
+| 6 | 《巴菲特致股东信》 | Warren Buffett | 20 |
+
 ## 使用方式
 
-直接说触发词即可，例如：
-- "用 circle-of-competence 帮我分析这个投资"
-- "用 planning-fallacy 帮我看看这个排期"
+- 直接描述场景，系统自动匹配 skill
+- 或显式调用：`用 XXX 帮我分析 YYY`
+- 详细 SOP 见 `SOP.md`
 
 ## 许可
 
