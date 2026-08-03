@@ -1,6 +1,6 @@
-# Claude Code Skills 合集 — 52 个可执行技能
+# Claude Code Skills 合集 — 68 个可执行技能
 
-从 7 本经典著作蒸馏出的方法论技能包。
+从 9 本经典著作蒸馏出的方法论技能包。
 
 ## 安装
 
@@ -8,9 +8,22 @@
 cp -r */ ~/.claude/skills/
 ```
 
+## 来源书目
+
+| 序号 | 书名 | 作者 | 技能数 |
+|------|------|------|--------|
+| 1 | 《你的灯亮着吗》 | Gause & Weinberg | 7 |
+| 2 | 《卓有成效的管理者》 | Peter Drucker | 6 |
+| 3 | 《思考，快与慢》 | Daniel Kahneman | 9 |
+| 4 | 《谁动了我的奶酪》 | Spencer Johnson | 5 |
+| 5 | 《大趋势》 | John Naisbitt | 7 |
+| 6 | 《非暴力沟通》 | Marshall Rosenberg | 6 |
+| 7 | 《摄影构图学》 | 克莱门茨 & 罗森菲尔德 | 8 |
+| 8 | 《巴菲特致股东信》 | Warren Buffett | 20 |
+
 ## 技能清单
 
-### 《你的灯亮着吗》(7)
+### 《你的灯亮着吗》— 问题解决 (7)
 | 技能 | 一句话 |
 |------|--------|
 | `check-your-lights` | 元检查——出门前灯亮着吗 |
@@ -21,7 +34,7 @@ cp -r */ ~/.claude/skills/
 | `dont-mistake-solution-for-problem` | "我要一个X"不是问题 |
 | `foreign-perspective` | 用外国人/盲人/孩子视角审视 |
 
-### 《卓有成效的管理者》(6)
+### 《卓有成效的管理者》— 管理效率 (6)
 | 技能 | 一句话 |
 |------|--------|
 | `effectiveness-learnable` | 卓有成效是习惯，不是天赋 |
@@ -31,7 +44,7 @@ cp -r */ ~/.claude/skills/
 | `first-things-first` | 一次只做一件最重要的事 |
 | `effective-decisions` | 决策始于不同意见 |
 
-### 《思考，快与慢》(9)
+### 《思考，快与慢》— 认知心理学 (9)
 | 技能 | 一句话 |
 |------|--------|
 | `two-systems` | 系统1快/直觉，系统2慢/理性 |
@@ -44,7 +57,7 @@ cp -r */ ~/.claude/skills/
 | `remembering-vs-experiencing` | 记忆=峰值+终点 |
 | `overconfidence` | 用区间预测校准自信 |
 
-### 《谁动了我的奶酪》(5)
+### 《谁动了我的奶酪》— 应对变化 (5)
 | 技能 | 一句话 |
 |------|--------|
 | `sniff-the-change` | 在变化发生前闻出味道 |
@@ -53,7 +66,7 @@ cp -r */ ~/.claude/skills/
 | `move-with-cheese` | 享受变化，而不只是适应 |
 | `keep-it-simple` | 别复杂化，穿上鞋就出发 |
 
-### 《大趋势》(7)
+### 《大趋势》— 趋势分析 (7)
 | 技能 | 一句话 |
 |------|--------|
 | `trend-analyzer` | 不看专家看数据，内容分析法 |
@@ -64,7 +77,29 @@ cp -r */ ~/.claude/skills/
 | `networking-era` | 等级→网络，价值=连接×转发 |
 | `long-term-view` | 短期是噪音，长期是趋势 |
 
-### 《巴菲特致股东信》(20)
+### 《非暴力沟通》— 沟通技巧 (6)
+| 技能 | 一句话 |
+|------|--------|
+| `nvc-4steps` | 观察→感受→需要→请求 |
+| `observation-vs-evaluation` | 说事实，不说评判 |
+| `identify-needs` | 每个愤怒背后是未满足的需要 |
+| `make-requests` | 请求≠命令，允许对方说"不" |
+| `empathic-listening` | 复述，不给建议 |
+| `giraffe-language` | 长颈鹿vs豺狗——用大心脏说话 |
+
+### 《摄影构图学》— 视觉艺术 (8)
+| 技能 | 一句话 |
+|------|--------|
+| `abstract-visual-beauty` | 发现抽象视觉美点 |
+| `composition-order` | 从混乱中找出秩序 |
+| `shape-composition` | 形状是一切构图基础 |
+| `line-language` | 线条——不存在的事实 |
+| `light-shadow-mastery` | 明暗是摄影的要素 |
+| `texture-awareness` | 质感激起触摸欲望 |
+| `visual-training` | 系统的视觉训练方法 |
+| `break-composition-rules` | 打破规则，不墨守成规 |
+
+### 《巴菲特致股东信》— 投资方法论 (20)
 | 技能 | 一句话 |
 |------|--------|
 | `aesop-three-questions` | 伊索三问：估值框架 |
@@ -87,17 +122,6 @@ cp -r */ ~/.claude/skills/
 | `partner-with-admired` | 与你敬佩的人同行 |
 | `real-conservatism` | 真正的保守主义 |
 | `three-asset-categories` | 三类资产估值框架 |
-
-## 来源书目
-
-| 序号 | 书名 | 作者 | 技能数 |
-|------|------|------|--------|
-| 1 | 《你的灯亮着吗》 | Gause & Weinberg | 7 |
-| 2 | 《卓有成效的管理者》 | Peter Drucker | 6 |
-| 3 | 《思考，快与慢》 | Daniel Kahneman | 9 |
-| 4 | 《谁动了我的奶酪》 | Spencer Johnson | 5 |
-| 5 | 《大趋势》 | John Naisbitt | 7 |
-| 6 | 《巴菲特致股东信》 | Warren Buffett | 20 |
 
 ## 使用方式
 
