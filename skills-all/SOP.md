@@ -1,188 +1,201 @@
-# Claude Code Skills — 使用 SOP
-
-## 一句话总结
-
-在对话中出现特定信号词/场景时，系统自动匹配对应 skill，agent 按方法论框架输出结构化的分析/决策辅助。
+# Skills SOP — 84 个技能使用指南
 
 ## 使用方式
 
-直接说触发场景的话即可，无需特殊格式：
-
+**方式一**：直接描述问题，系统自动匹配
 ```
-"用 XXX 帮我分析 YYY"
-"我觉得 ZZZ，帮我检查一下"
-直接描述问题，系统自动匹配
+"我觉得现在的工作很稳定，但心里不踏实"
+→ 自动触发 sniff-the-change
 ```
 
----
-
-## 一、投资决策场景
-
-### 你刚发现一个投资机会
-
+**方式二**：显式调用
 ```
-先走: know-thy-time          → "我有足够的时间研究吗？"
-再走: circle-of-competence   → "这个行业我懂吗？"
-再走: business-picker        → "这是一个好企业吗？"
-再走: economic-moat          → "它的护城河在哪？"
-再走: aesop-three-questions  → "它值多少钱？"
-再走: margin-of-safety       → "现在的价格够低吗？"
-```
-
-### 你在纠结要不要卖
-
-```
-先走: loss-aversion          → "我是因为怕亏损才不卖吗？"
-再走: mr-market              → "我是在听市场先生的报价吗？"
-再走: hold-forever           → "如果永远不能卖我还买这个吗？"
-```
-
-### 你看到市场狂热/恐慌
-
-```
-fear-and-greed               → "现在是该逆着市场走的时候吗？"
-availability-heuristic       → "我是被最近新闻影响了吗？"
-```
-
-### 你在选合作伙伴/管理层
-
-```
-partner-with-admired         → "我愿意和这些人长期合作吗？"
-ceo-as-risk-officer          → "CEO把风控放在第一位吗？"
-real-conservatism            → "随大流≠保守，我独立思考了吗？"
-```
-
-### 你在评估财务报表
-
-```
-look-through-earnings        → "穿透会计数字看真实盈利"
-first-law-of-capital-allocation → "留存收益能创造价值吗？"
-float-thinking               → "有低成本资金来源吗？"
-```
-
-### 你在做资产配置
-
-```
-three-asset-categories       → "货币/黄金/股票/房产，选哪个？"
-compounding-thinking         → "时间维度上复利怎么起效？"
-```
-
-### 你准备用杠杆/融资
-
-```
-no-leverage                  → "永远不要用杠杆"
-never-issue-shares           → "用现金不用股票做收购"
-cigar-butt-vs-great-business → "便宜差公司 vs 合理价好公司"
-institutional-imperative     → "组织为什么总做蠢事？"
+"用 first-or-different 帮我分析这个产品"
 ```
 
 ---
 
-## 二、问题解决场景
+## 一、场景速查：遇到什么问题，用哪个 skill
 
-### 你有一个"模糊的问题"
+### 💰 投资决策
 
+| 你的问题 | 用这个 |
+|---------|--------|
+| 这个行业/公司我懂吗？ | `circle-of-competence` |
+| 这是好企业还是好股票？ | `business-picker` |
+| 它有护城河吗？ | `economic-moat` |
+| 它值多少钱？ | `aesop-three-questions` |
+| 现在的价格够低吗？ | `margin-of-safety` |
+| 市场在暴跌/暴涨，怎么办？ | `mr-market` |
+| 所有人都在买，我应该跟吗？ | `fear-and-greed` |
+| 我是不是该卖了？ | `hold-forever` |
+| 亏了不想卖怎么办？ | `loss-aversion` |
+| 我应该定投还是一次性买？ | `compounding-thinking` |
+| 用现金还是股票做收购？ | `never-issue-shares` / `first-law-of-capital-allocation` |
+| 这个管理层靠谱吗？ | `partner-with-admired` + `ceo-as-risk-officer` |
+| 财报上的利润是真的吗？ | `look-through-earnings` |
+| 应该跟风还是独立思考？ | `real-conservatism` |
+| 有低成本资金来源吗？ | `float-thinking` |
+| 三种资产怎么选？ | `three-asset-categories` |
+
+### 🧠 问题分析与决策
+
+| 你的问题 | 用这个 |
+|---------|--------|
+| 说不清哪里不对 | `problem-definition-formula` |
+| 帮我想想怎么解决 | `check-your-lights` → `problem-analysis-3steps` |
+| 我说"我们需要一个XX" | `dont-mistake-solution-for-problem` |
+| 想不出新办法了 | `problem-restatement` |
+| 这个事我用直觉对吗？ | `two-systems` |
+| 我对这个判断很自信 | `overconfidence` |
+| 方案上线后又出新问题了 | `solution-chain-awareness` |
+| "上次X就好了" | `regression-to-mean` |
+| 报价/估值被一个数字左右 | `anchoring-effect` |
+| 换个说法结果完全不同 | `framing-effect` |
+| "最近老看到XX" | `availability-heuristic` |
+| 两周能做完 | `planning-fallacy` |
+| 那次经历糟透了 | `remembering-vs-experiencing` |
+
+### 📊 营销与定位
+
+| 你的问题 | 用这个 |
+|---------|--------|
+| 产品好但卖不动 | `mind-first-thinking` |
+| 市场太卷了怎么突围 | `first-or-different` |
+| 我们到底在哪个位置 | `ladder-in-the-mind` |
+| 怎么打赢行业老大 | `follower-positioning` + `reposition-competition` |
+| 我们是第一怎么守住 | `leader-positioning` |
+| 想用一个品牌做多个产品 | `line-extension-trap` |
+| 叫什么名字好 | `name-is-strategy` |
+
+### 🏢 管理与执行
+
+| 你的问题 | 用这个 |
+|---------|--------|
+| 太忙了，时间不够 | `know-thy-time` |
+| 做了很多但没完成什么 | `first-things-first` |
+| 我该做什么 | `contribution-focus` |
+| 招人/组队/评绩效 | `strengths-based` |
+| 要做重要决策 | `effective-decisions` |
+| 我觉得自己不擅长管理 | `effectiveness-learnable` |
+| 团队效率低/怎么带人 | `people-leadership` |
+| 怎么建立竞争优势 | `competitive-edge` |
+| 怎么让钱花得值 | `wealth-stewardship` |
+
+### 🔄 应对变化
+
+| 你的问题 | 用这个 |
+|---------|--------|
+| 一切正常，不用改变 | `sniff-the-change` |
+| 我还想恢复原来的样子 | `let-go-old-cheese` |
+| 想改变但害怕 | `overcome-fear` |
+| 已经接受改变了，但只是被动 | `move-with-cheese` |
+| 想太多不敢行动 | `keep-it-simple` |
+
+### 📡 趋势与未来
+
+| 你的问题 | 用这个 |
+|---------|--------|
+| 这是真趋势还是炒作？ | `trend-analyzer` |
+| AI会取代人吗？ | `high-tech-high-touch` |
+| 总部管太多了 | `decentralization` |
+| 我的岗位还有价值吗？ | `info-society` |
+| 国内市场饱和了 | `global-economy` |
+| 怎么建立人脉和影响力 | `networking-era` |
+| 被KPI绑架了 | `long-term-view` |
+
+### 🗣 沟通与人际
+
+| 你的问题 | 用这个 |
+|---------|--------|
+| 我们总是吵架 | `nvc-4steps` |
+| 我说的"事实"对方不认 | `observation-vs-evaluation` |
+| 我很生气但说不出为什么 | `identify-needs` |
+| 我提的要求对方不做 | `make-requests` |
+| 我安慰了但对方说"你不懂我" | `empathic-listening` |
+| 对话变成了对抗 | `giraffe-language` |
+
+### 🎨 视觉与创意
+
+| 你的问题 | 用这个 |
+|---------|--------|
+| 不知道拍什么 | `abstract-visual-beauty` |
+| 画面太乱了 | `composition-order` |
+| 主体不够突出 | `shape-composition` |
+| 照片太静止了 | `line-language` |
+| 没层次感 | `light-shadow-mastery` |
+| 照片没质感 | `texture-awareness` |
+| 怎么练摄影 | `visual-training` |
+| 按规则拍反而死板 | `break-composition-rules` |
+
+### 🍷 社交应酬
+
+| 你的问题 | 用这个 |
+|---------|--------|
+| 不认识人办不了事 | `renqing-investment` |
+| 怎么请客吃饭谈事情 | `dinner-strategy` |
+| 怕得罪人/被当众批评 | `face-management` |
+| 怎么拓展人脉圈子 | `guanxi-network` |
+| 感觉别人不重视我 | `social-value` |
+| 送礼怎么送不刻意 | `gifting-wisdom` |
+| 怎么让别人帮我办事 | `power-borrowing` |
+| 关系僵了/得罪人了 | `conflict-repair` |
+
+### 🧘 人生哲学
+
+| 你的问题 | 用这个 |
+|---------|--------|
+| 活着有什么意义 | `purpose-living` |
+| 太困难了怎么办 | `crisis-as-opportunity` |
+| 利润重要还是价值观重要 | `heart-centered-leadership` |
+| 这么做对吗 | `respect-heaven-love-people` |
+| 怎么每天进步 | `continuous-self-improvement` |
+| 帮别人自己会吃亏吗 | `altruistic-mindset` |
+
+### 💪 个人成长
+
+| 你的问题 | 用这个 |
+|---------|--------|
+| 想开始但总在准备 | `action-first` |
+| 出身不好资源不够 | `self-determination` |
+| 目标是不是太小了 | `ambition-drive` |
+| 被打击了不想再试 | `resilience-mindset` |
+| 怎么还没结果 | `strategic-patience` |
+
+---
+
+## 二、典型工作流（串联多个 skill）
+
+### 场景1：创业/新产品定位
 ```
-先走: check-your-lights           → "我的灯亮着吗？我先理解对了吗？"
-再走: problem-definition-formula  → "期望是什么？体验是什么？差距在哪？"
-再走: problem-analysis-3steps     → "谁有问题？各自的问题是什么？从哪来？"
-再走: dont-mistake-solution-for-problem → "你说的这个'问题'是不是其实是个方案？"
+mind-first-thinking → ladder-in-the-mind → first-or-different → name-is-strategy
 ```
 
-### 你卡住了，只想得到常规答案
-
+### 场景2：做投资决策
 ```
-problem-restatement          → "换个说法重新描述这个问题"
-foreign-perspective          → "用盲人/外国人/孩子的视角看"
+circle-of-competence → business-picker → economic-moat → aesop-three-questions → margin-of-safety
 ```
 
-### 方案刚上线，又出新问题
-
+### 场景3：解决复杂问题
 ```
-solution-chain-awareness     → "每种方案都会生新问题，预判3个"
-regression-to-mean           → "这次变好/变坏是真的效果还是回归均值？"
+check-your-lights → problem-definition-formula → problem-analysis-3steps → dont-mistake-solution-for-problem → problem-restatement
+```
+
+### 场景4：团队冲突
+```
+giraffe-language → observation-vs-evaluation → identify-needs → nvc-4steps → empathic-listening
+```
+
+### 场景5：转行/转型
+```
+sniff-the-change → overcome-fear → action-first → info-society → self-determination
 ```
 
 ---
 
-## 三、管理与执行场景
+## 三、注意事项
 
-### 你感觉"太忙了，时间不够"
-
-```
-know-thy-time                → "记录2周时间日志，砍25%"
-first-things-first           → "一次只做一件事，做最重要的"
-```
-
-### 你在思考"我该做什么"
-
-```
-contribution-focus           → "我能贡献什么？（成果/价值观/人才）"
-effectiveness-learnable      → "卓有成效是可以学会的，不是天赋"
-```
-
-### 你在招人/组队/评绩效
-
-```
-strengths-based              → "这个人擅长什么？怎么让长处发挥？"
-```
-
-### 你要做重要决策
-
-```
-effective-decisions          → "先判断是偶发还是经常性问题"
-two-systems                  → "系统1直觉还是系统2分析？"
-overconfidence               → "用区间预测校准自信"
-```
-
----
-
-## 四、认知偏见自检场景
-
-| 你说的话 | 可能的问题 | 检查用 |
-|---------|-----------|--------|
-| "肯定涨" | 过度自信 | `overconfidence` |
-| "最近老看到" | 可得性偏误 | `availability-heuristic` |
-| "亏了不想卖" | 损失厌恶 | `loss-aversion` |
-| "市场价是X" | 锚定效应 | `anchoring-effect` |
-| "90%存活率很好" | 框架效应 | `framing-effect` |
-| "两周能做完" | 规划谬误 | `planning-fallacy` |
-| "上次骂了他就改了" | 回归均值误判 | `regression-to-mean` |
-| "这体验糟透了" | 记忆≠体验 | `remembering-vs-experiencing` |
-
----
-
-## 五、技能触发速查表
-
-```
-需要决策框架
-  └─ effective-decisions / two-systems
-
-需要估值分析
-  └─ aesop-three-questions → margin-of-safety → business-picker
-
-需要问题分析
-  └─ check-your-lights → problem-definition-formula → problem-analysis-3steps
-
-需要创意突破
-  └─ problem-restatement → foreign-perspective
-
-需要人员管理
-  └─ strengths-based → contribution-focus
-
-需要时间管理
-  └─ know-thy-time → first-things-first
-
-需要认知检查
-  └─ overconfidence → loss-aversion → framing-effect → availability-heuristic
-
-需要投资决策
-  └─ circle-of-competence → economic-moat → mr-market → compounding-thinking
-```
-
-## 六、注意事项
-
-1. **不要一次调用太多 skill**— 一次聚焦 1-2 个，效果最好
-2. **skill 是辅助不是替代**— 它提供框架，你提供具体数据和判断
-3. **按场景选 skill**— 不相关的 skill 强行用会适得其反
-4. **可以组合**— 复杂问题可以串联多个 skill，如"先 two-systems 再 effective-decisions"
+1. 一次只用 1-2 个 skill，不要全堆
+2. skill 提供框架，不是替你决策——数据你自己提供
+3. 不匹配的 skill 强行用会适得其反
+4. 不确定时先说"帮我看看我用哪个 skill 好"

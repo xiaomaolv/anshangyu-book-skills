@@ -1,6 +1,6 @@
-# Claude Code Skills 合集 — 68 个可执行技能
+# Claude Code Skills 合集 — 98 个可执行技能
 
-从 9 本经典著作蒸馏出的方法论技能包。
+从 13 本经典著作蒸馏出的方法论技能包。
 
 ## 安装
 
@@ -10,8 +10,8 @@ cp -r */ ~/.claude/skills/
 
 ## 来源书目
 
-| 序号 | 书名 | 作者 | 技能数 |
-|------|------|------|--------|
+| # | 书名 | 作者 | 技能数 |
+|---|------|------|--------|
 | 1 | 《你的灯亮着吗》 | Gause & Weinberg | 7 |
 | 2 | 《卓有成效的管理者》 | Peter Drucker | 6 |
 | 3 | 《思考，快与慢》 | Daniel Kahneman | 9 |
@@ -19,7 +19,11 @@ cp -r */ ~/.claude/skills/
 | 5 | 《大趋势》 | John Naisbitt | 7 |
 | 6 | 《非暴力沟通》 | Marshall Rosenberg | 6 |
 | 7 | 《摄影构图学》 | 克莱门茨 & 罗森菲尔德 | 8 |
-| 8 | 《巴菲特致股东信》 | Warren Buffett | 20 |
+| 8 | 《洛克菲勒写给儿子的38封信》 | John D. Rockefeller | 8 |
+| 9 | 《人为什么活着》 | 稻盛和夫 | 6 |
+| 10 | 《定位》 | 阿尔·里斯 & 杰克·特劳特 | 8 |
+| 11 | 《中国式应酬》 | 武敬敏 | 8 |
+| 12 | 《巴菲特致股东信》 | Warren Buffett | 20 |
 
 ## 技能清单
 
@@ -98,6 +102,52 @@ cp -r */ ~/.claude/skills/
 | `texture-awareness` | 质感激起触摸欲望 |
 | `visual-training` | 系统的视觉训练方法 |
 | `break-composition-rules` | 打破规则，不墨守成规 |
+
+### 《洛克菲勒写给儿子的38封信》— 成功哲学 (8)
+| 技能 | 一句话 |
+|------|--------|
+| `action-first` | 现在就去做，不做完美主义 |
+| `self-determination` | 起点不决定终点，行动决定命运 |
+| `ambition-drive` | 贪心大有必要，就要做第一 |
+| `resilience-mindset` | 侮辱是动力，永不精神破产 |
+| `wealth-stewardship` | 每一分钱都要带来效益 |
+| `strategic-patience` | 忍耐就是策略，时间是盟友 |
+| `people-leadership` | 合作的力量，部属放第一 |
+| `competitive-edge` | 用实力让对手恐惧 |
+
+### 《人为什么活着》— 人生哲学 (6)
+| 技能 | 一句话 |
+|------|--------|
+| `purpose-living` | 人生目的是提升心性、磨炼灵魂 |
+| `crisis-as-opportunity` | 寒冬是危机，更是契机 |
+| `heart-centered-leadership` | 以心为本的经营 |
+| `respect-heaven-love-people` | 敬天爱人——决策的过滤器 |
+| `continuous-self-improvement` | 每天比昨天进步1% |
+| `altruistic-mindset` | 利他之心是宇宙的法则 |
+
+### 《定位》— 品牌营销 (8)
+| 技能 | 一句话 |
+|------|--------|
+| `mind-first-thinking` | 定位是对顾客心智做的事 |
+| `first-or-different` | 第一或开创一个新品类 |
+| `ladder-in-the-mind` | 心智阶梯决定你的战略 |
+| `reposition-competition` | 让对手的优势变成弱点 |
+| `name-is-strategy` | 名字本身就是定位 |
+| `line-extension-trap` | 一个品牌只能占据一个词 |
+| `leader-positioning` | 领导者用多品牌拦截对手 |
+| `follower-positioning` | 跟随者找空位，不正面打 |
+
+### 《中国式应酬》— 社交智慧 (8)
+| 技能 | 一句话 |
+|------|--------|
+| `renqing-investment` | 人情如储蓄，时时储日日多 |
+| `dinner-strategy` | 99%的事在饭局上开始 |
+| `face-management` | 面子是社交硬通货 |
+| `guanxi-network` | 钻圈子、造圈子、跳圈子 |
+| `social-value` | 别怕被利用，怕没人用你 |
+| `gifting-wisdom` | 送礼是传递重视，不是交换 |
+| `power-borrowing` | 借力成事，化他人之力为我用 |
+| `conflict-repair` | 人情链断裂要懂得修复 |
 
 ### 《巴菲特致股东信》— 投资方法论 (20)
 | 技能 | 一句话 |
